@@ -36,6 +36,11 @@
 }
 
 /* General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -183,7 +188,27 @@ header {
     position: absolute;
     right: 1em;
     top: 1em;
-    z-index: 500;
+    z-index: 1000;
+}
+
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+  
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hambgurger {
+    transform: roate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+.nav-open .hambuger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -194,15 +219,12 @@ header {
 .hamburger,
 .hamburger::before,
 .hambuger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
-.hamburger::before {top: 6px;}
-.hamburger::after {bottom: 6px;}
 
 .hamburger::before,
 .hambuger::after {
@@ -210,9 +232,11 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    background: var(--clr-dark);
+    background: var(--clr-accent);
 }
 
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
 
 /* intro section */
 .intro {
@@ -420,3 +444,14 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+.portfolio-item {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right:auto;
+    font-size: var(--fs-h3);
+
+}
+
