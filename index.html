@@ -20,7 +20,9 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="picture of logo">
+            <a href="#home">
+                <img src="" alt="picture of logo">
+            </a>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -31,7 +33,7 @@
                 <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                 <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                <!--<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>-->
+                <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -41,8 +43,8 @@
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">Hi, I am <strong>Sam West</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">JavaScript dev</p>
-        <img src="images/me.png" alt="picture of Sam West" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">App developer</p>
+        <img src="images/me.jpg" alt="picture of Sam West" class="intro__img">
     </section>
 
 
@@ -52,11 +54,11 @@
         <div class="services">
             <div class="service">
                 <h3>Web-Development</h3>
-                <p>I create, test and programming apps for computers, mobile phones, and tablets. I also work well with in a team and like to contribute ideas and concepts to meet specific customer and user needs.</p>
+                <p>I code and design websites according to a company's specifications. I tailer them to the users experience and needs, implementing my programming and graphic design knowledge to create a finished product.</p>
             </div> <!-- close of web Development -->
             <div class="service">
                 <h3>App-Development</h3>
-                <p>I code and design websites according to a company's specifications. I tailer to the users experience and needs, implementing my programming and graphic design knowledge.</p>
+                <p>I create, test and program apps for computers, mobile phones, and tablets. I also work well with in a team and like to contribute ideas and concepts to meet specific customer and user needs.</p>
             </div> <!-- close of app development -->
         </div> <!-- close services-->
 
@@ -69,9 +71,9 @@
         <h2 class="section__title section__title--about">About Me</h2>
         <p class="section__subtitle section__subtitle--about"> North-West based Developer</p>
         <div class="about-me__body">
-            <p>this is a load of info about me</p>
+            <p>I'm Sam West a full stack developer from Manchester, UK. I graduated with a 1st class music technology degree but decided to pursue a career in coding after the pandemic struck the nation. I had alwasy experiemented in coding for art projects but after joinging and graduating the Northcoders bootcamp I feel prepared and excited by the tech industry! </p>
         </div>
-        <img src="images/me.png" alt="picture of me" class="about-me__img">
+        <img src="images/me.jpg" alt="picture of me" class="about-me__img">
     </section>
 
 
@@ -82,15 +84,19 @@
         <div class="portfolio">
             <a href="/portfolio1.html" class="portfolio__item">
                 <!-- portfolio image 01-->
-                <img src="/images/nc news.jpg" alt="" class="portfolio__img">
+                <img src="/images/a-walk-in-the-park.png" alt="" class="portfolio__img">
             </a>
             <a href="/portfolio2.html" class="portfolio__item">
                 <!-- portfolio image 01-->
-                <img src="/images/sailing club.jpg" alt="" class="portfolio__img">
+                <img src="/images/news.png" alt="" class="portfolio__img">
             </a>
             <a href="/portfolio3.html" class="portfolio__item">
                 <!-- portfolio image 01-->
-                <img src="/images/audiovisualizer.jpg" alt="" class="portfolio__img">
+                <img src="/images/hangman.png" alt="" class="portfolio__img">
+            </a>
+            <a href="/portfolio4.html" class="portfolio__item">
+                <!-- portfolio image 01-->
+                <img src="/images/to-do-list.png" alt="" class="portfolio__img">
             </a>
         </div>
     </section>
@@ -100,11 +106,13 @@
     <section class="contact" id="contact">
         <h2 class="section__title section__title--contact">Contact</h2>
         <p class="section__subtitle section__subtitle--contact"></p>
+        <a href="mailto:samwesttech@gmail.com" class="footer__link">samwesttech@gmail.com</a>
+        <ul class="social-list">
     </section> -->
     
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <a href="mailto:samwesttech@gmail.com" class="footer__link">samwesttech@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -113,13 +121,8 @@
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/westypro">
+                <a class="social-list__link" href="https://github.com/samwesttech">
                     <i class="fab fa-github-square"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/?lang=en-gb">
-                    <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
         </ul>
