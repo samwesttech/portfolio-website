@@ -16,12 +16,15 @@
 
     <!--link to css file-->
     <link rel="stylesheet" href="css/index.css">
+
+    <!--link fade up animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="" alt="picture of logo">
+                <img src="images/logo.png" alt="picture of logo">
             </a>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -47,13 +50,17 @@
         <img src="/images/hangman.png" alt="picture of Sam West" class="intro__img">
     </section>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item" data-aos="fade-up"  data-aos-duration="3000">
         <h2>Hangman Game</h2>
         <p>I created this hangman game after understanding the basics of React. I wanted to learn how to incorporate React Hooks into my apps to streamline my workflow. It also gave me an opportunity to work with Scalable Vector Graphics in creating the hangman figure. </p>
+        <a href='https://hangman-swt.netlify.app'>Hangman game</a>
+        <br></br>
+        <a href='https://github.com/samwesttech/Hangman'>Hangman repository</a>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
+        <h2 class="section__title section__title--services">Contact</h2>
         <a href="mailto:samwesttech@gmail.com" class="footer__link">samwesttech@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -62,18 +69,17 @@
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/westypro">
+                <a class="social-list__link" href="https://github.com/samwesttech">
                     <i class="fab fa-github-square"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/?lang=en-gb">
-                    <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
         </ul>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="scripts/index.js"></script>
 </body>
 </html>

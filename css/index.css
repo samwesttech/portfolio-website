@@ -388,11 +388,11 @@ header {
   display: inline-block;
   margin: auto;
   padding: 2rem 2rem;
-  border: solid black 2px;
+  border: solid black 1px;
 }
 
 .portfolio__img {
-  border: solid black 2px;
+  border: solid black 1px;
   height: 300px;
   width: 300px;
 }

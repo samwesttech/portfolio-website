@@ -16,12 +16,15 @@
 
     <!--link to css file-->
     <link rel="stylesheet" href="css/index.css">
+
+    <!--link fade up animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="" alt="picture of logo">
+                <img src="images/logo.png" alt="picture of logo">
             </a>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -47,13 +50,19 @@
         <img src="/images/news.png" alt="picture of Sam West" class="intro__img">
     </section>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item" data-aos="fade-up"  data-aos-duration="3000">
         <h2>The Internet News</h2>
         <p>The Internet News is a social news aggregation, web content rating, and discussion website. Northcoders News has articles which are divided into topics. Each article has user curated ratings and can be up or down voted using the API. Users can also add comments about an article. Comments can also be up or down voted. A user can add comments and remove any comments which they have added. This project developed my front-end skills, technologies and put in place best practises needed to create a react based app. I also learnt how to make asynchronous API calls to my own server and use HTTP request types to interact with my backend, and HTTP response codes to update your UI accordingly.</p>
+        <a href='https://theinternet.netlify.app'> News website</a>
+        <br></br>
+        <a href='https://github.com/samwesttech/theinternet'>News website frontend Github repository</a>
+        <br></br>
+        <a href='https://github.com/samwesttech/theinternet-backend'>News website backend Github repository</a>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" >
+        <h2 class="section__title section__title--services">Contact</h2>
         <a href="mailto:samwesttech@gmail.com" class="footer__link">samwesttech@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -62,18 +71,17 @@
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/westypro">
+                <a class="social-list__link" href="https://github.com/samwesttech">
                     <i class="fab fa-github-square"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/?lang=en-gb">
-                    <i class="fab fa-twitter-square"></i>
                 </a>
             </li>
         </ul>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="scripts/index.js"></script>
 </body>
 </html>

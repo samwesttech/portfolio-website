@@ -16,12 +16,15 @@
 
     <!--link to css file-->
     <link rel="stylesheet" href="css/index.css">
+
+    <!--link fade up animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="#home">
-                <img src="" alt="picture of logo">
+                <img src="images/logo.png" alt="picture of logo">
             </a>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -41,39 +44,40 @@
 
     <!--Introduction-->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">Hi, I am <strong>Sam West</strong>
+        <div data-aos="fade-up"  data-aos-duration="2000">
+        <h1 class="section__title section__title--intro">Hi, I am<strong>Sam West</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">App developer</p>
-        <img src="images/me.jpg" alt="picture of Sam West" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+    </div>
+        <img src="images/me.jpg" alt="picture of Sam West" class="intro__img" data-aos="fade-up"  data-aos-duration="3000">
     </section>
 
 
     <!-- My Services -->
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What i do</h2>
-        <div class="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services" data-aos="fade-up"  data-aos-duration="1000">
             <div class="service">
-                <h3>Web-Development</h3>
-                <p>I code and design websites according to a company's specifications. I tailer them to the users experience and needs, implementing my programming and graphic design knowledge to create a finished product.</p>
+                <h3>Web Development</h3>
+                <p>I code and design websites according to a company's specifications. I tailor them to the users experience and needs, implementing my programming and graphic design knowledge to create a finished product.</p>
             </div> <!-- close of web Development -->
             <div class="service">
-                <h3>App-Development</h3>
-                <p>I create, test and program apps for computers, mobile phones, and tablets. I also work well with in a team and like to contribute ideas and concepts to meet specific customer and user needs.</p>
+                <h3>App Development</h3>
+                <p>I create, test and programme apps for computers, mobile phones, and tablets. I also work well with in a team and like to contribute ideas and concepts to meet specific customer and user needs.</p>
             </div> <!-- close of app development -->
         </div> <!-- close services-->
-
-        <a href="#work" class="btn">My Work</a>
+        <a href="#work" class="btn" >My Work</a>
     </section>
 
 
     <!-- About me-->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About Me</h2>
-        <p class="section__subtitle section__subtitle--about"> North-West based Developer</p>
-        <div class="about-me__body">
-            <p>I'm Sam West a full stack developer from Manchester, UK. I graduated with a 1st class music technology degree but decided to pursue a career in coding after the pandemic struck the nation. I had alwasy experiemented in coding for art projects but after joinging and graduating the Northcoders bootcamp I feel prepared and excited by the tech industry! </p>
+        <p class="section__subtitle section__subtitle--about" data-aos="fade-up"  data-aos-duration="3000"> North-West based Developer</p>
+        <div class="about-me__body" data-aos="fade-up"  data-aos-duration="2000">
+            <p>I'm Sam West a full stack developer from Manchester, UK. I graduated with a 1st class music technology degree but decided to pursue a career in coding after the pandemic struck the nation. I had always experiemented in coding for art projects but after joinging and graduating the Northcoders bootcamp I feel prepared and excited by the tech industry! </p>
         </div>
-        <img src="images/me.jpg" alt="picture of me" class="about-me__img">
+        <img src="images/me.jpg" alt="picture of me" class="about-me__img" data-aos="fade-up"  data-aos-duration="3000">
     </section>
 
 
@@ -82,19 +86,19 @@
         <h2 class="section__title section__title--work">Work</h2>
         <p class="section__subtitle section__subtitle--work">a selection of previous projects</p>
         <div class="portfolio">
-            <a href="/portfolio1.html" class="portfolio__item">
+            <a href="/portfolio1.html" class="portfolio__item" data-aos="flip-up"  data-aos-duration="500">
                 <!-- portfolio image 01-->
                 <img src="/images/a-walk-in-the-park.png" alt="" class="portfolio__img">
             </a>
-            <a href="/portfolio2.html" class="portfolio__item">
+            <a href="/portfolio2.html" class="portfolio__item" data-aos="flip-up"  data-aos-duration="1250">
                 <!-- portfolio image 01-->
-                <img src="/images/news.png" alt="" class="portfolio__img">
+                <img src="/images/news.png" alt="" class="portfolio__img" >
             </a>
-            <a href="/portfolio3.html" class="portfolio__item">
+            <a href="/portfolio3.html" class="portfolio__item" data-aos="flip-up"  data-aos-duration="2000">
                 <!-- portfolio image 01-->
                 <img src="/images/hangman.png" alt="" class="portfolio__img">
             </a>
-            <a href="/portfolio4.html" class="portfolio__item">
+            <a href="/portfolio4.html" class="portfolio__item" data-aos="flip-up"  data-aos-duration="3000">
                 <!-- portfolio image 01-->
                 <img src="/images/to-do-list.png" alt="" class="portfolio__img">
             </a>
@@ -113,6 +117,7 @@
 
     <!-- Footer -->
     <footer class="footer" id="footer">
+        <h2 class="section__title section__title--services">Contact</h2>
         <a href="mailto:samwesttech@gmail.com" class="footer__link">samwesttech@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -128,6 +133,10 @@
         </ul>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
